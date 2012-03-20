@@ -1,0 +1,64 @@
+[
+	/* Always use smart-indent paste */
+	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+
+	/* Avoid most-recently-used tab switching */
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+	/* Set <tab> to pass through auto-filled punctuation */
+	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true},
+		"context": [ { "key": "following_text", "operator": "regex_contains", "operand": "^[)\"\\]]", "match_all": true },
+					 { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+					 { "key": "has_next_field", "operator": "equal", "operand": false },
+					 { "key": "has_prev_field", "operator": "equal", "operand": false } ] },
+
+	/* Fix some Vintage mode quirks */
+	{ "keys": ["ctrl+]"], "command": "none" },
+	{ "keys": ["ctrl+["], "command": "none",
+		"context": [ { "key": "setting.command_mode" } ] },
+
+	{ "keys": ["ctrl+["], "command": "exit_visual_mode",
+		"context": [ { "key": "selection_empty", "operand": false } ] },
+
+	{ "keys": ["ctrl+["], "command": "single_selection",
+		"context": [ { "key": "num_selections", "operator": "not_equal", "operand": 1 },
+					 { "key": "selection_empty", "operand": true, "match_all": true } ] },
+
+	{ "keys": ["ctrl+["], "command": "exit_insert_mode",
+		"context": [ { "key": "setting.insert_mode", "operand": true },
+					 { "key": "num_selections", "operator": "equal", "operand": 1 } ] },
+
+	{ "keys": ["ctrl+["], "command": "hide_auto_complete",
+		"context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": true } ] },
+
+	{ "keys": ["ctrl+["], "command": "hide_overlay",
+		"context": [ { "key": "overlay_visible", "operator": "equal", "operand": true } ] },
+
+	{ "keys": ["ctrl+["], "command": "hide_panel",
+		"context": [ { "key": "panel_visible", "operator": "equal", "operand": true } ] },
+	
+	{ "keys": ["ctrl+["], "command": "clear_fields",
+		"context": [ { "key": "has_next_field", "operator": "equal", "operand": true } ] },
+
+	{ "keys": ["ctrl+["], "command": "clear_fields",
+		"context": [ { "key": "has_prev_field", "operator": "equal", "operand": true } ] },
+
+	{ "keys": ["ctrl+["], "command": "run_macro_file",
+	    "args": {"file": "Packages/User/Go To Command Mode.sublime-macro"},
+        "context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": true },
+		             { "key": "setting.command_mode", "operand": false } ] },
+	
+
+	/* Add lines on enter for {, (, [ */
+	{ "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line in Braces.sublime-macro"}, "context": [ { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+					{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+					{ "key": "preceding_text", "operator": "regex_contains", "operand": "\\($", "match_all": true },
+					{ "key": "following_text", "operator": "regex_contains", "operand": "^\\)", "match_all": true } ] },
+
+	{ "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line in Braces.sublime-macro"}, "context": [ { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+					{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+					{ "key": "preceding_text", "operator": "regex_contains", "operand": "\\[$", "match_all": true },
+					{ "key": "following_text", "operator": "regex_contains", "operand": "^\\]", "match_all": true } ] }
+]
