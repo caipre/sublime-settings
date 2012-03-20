@@ -46,10 +46,10 @@
 		"context": [ { "key": "has_prev_field", "operator": "equal", "operand": true } ] },
 
 	{ "keys": ["ctrl+["], "command": "run_macro_file",
-	    "args": {"file": "Packages/User/Go To Command Mode.sublime-macro"},
-        "context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": true },
-		             { "key": "setting.command_mode", "operand": false } ] },
-	
+		"args": {"file": "Packages/User/Go To Command Mode.sublime-macro"},
+		"context": [ { "key": "auto_complete_visible", "operator": "equal", "operand": true },
+					 { "key": "setting.command_mode", "operand": false } ] },
+
 
 	/* Add lines on enter for {, (, [ */
 	{ "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line in Braces.sublime-macro"}, "context": [ { "key": "setting.auto_indent", "operator": "equal", "operand": true },
