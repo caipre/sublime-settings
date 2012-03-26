@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple COmputer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>author</key>
+		<string>Nick Platt</string>
+
+		<key>name</key>
+		<string>Atlantic</string>
+
+		<key>settings</key>
+		<array>
+
+
+
+
+
+			/* Global Settings
+			 * ================================== */
+			<dict>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#F8F8F5</string>
+
+					<key>foreground</key>
+					<string>#444444</string>
+
+					<key>caret</key>
+					<string>#000000</string>
+
+					<key>guide</key>
+					<string>#CCCCCC</string>
+
+					<key>stackGuide</key>
+					<string>#CCCCCC</string>
+
+					<key>activeGuide</key>
+					<string>#444444</string>
+
+					<key>invisibles</key>
+					<string>#FF0000</string>
+
+					<key>lineHighlight</key>
+					<string>#EEEEEE</string>
+
+					<key>selection</key>
+					<string>#3366FF25</string>
+
+					<key>gutterForeground</key>
+					<string>#A0A0A0</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>begin</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#00AA00</string>
+					<key>background</key>
+					<string>#00AA0045</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>end</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#AA0000</string>
+					<key>background</key>
+					<string>#AA000045</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>begin2</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#00AA00</string>
+					<key>background</key>
+					<string>#00AA0010</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>end2</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#880000</string>
+					<key>background</key>
+					<string>#88000010</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>one</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#55559920</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>two</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#55559960</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>three</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#555599AA</string>
+				</dict>
+			</dict>
+
+
+
+
+
+			/* Common Syntax
+			 * ================================== */
+			<dict>
+				<key>scope</key>
+				<string>comment</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#A0A0A0</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>source, text, keyword.operator</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#555555</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>keyword</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#007D41</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>keyword.operator.embedded</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#222222</string>
+					<key>background</key>
+					<string>#E8E8E8</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>entity.name.tag</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#004B7D</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>entity.other.attribute-name</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#4B7D96</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>string</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#698796</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>string.regexp</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FF7D19</string>
+					<key>background</key>
+					<string>#FF7D1915</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>constant.character.escaped</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+
+
+
+
+			/* Language Specific
+			 * ================================== */
+
+			/* Diff */
+			<dict>
+				<key>scope</key>
+				<string>meta.diff.header.from-file, meta.diff.header.to-file</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#4396BF</string>
+				</dict>
+			</dict>
+
+			<dict>
+		 		<key>scope</key>
+		 		<string>markup.deleted.diff</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>foreground</key>
+		 			<string>#BF4343</string>
+		 		</dict>
+		 	</dict>
+
+			<dict>
+		 		<key>scope</key>
+		 		<string>markup.inserted.diff</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>foreground</key>
+		 			<string>#2963A6</string>
+		 		</dict>
+		 	</dict>
+
+
+
+
+
+			/* Perl */
+			<dict>
+				<key>scope</key>
+				<string>variable.other.scalar.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#3264E1</string>
+					<key>background</key>
+					<string>#3264E115</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>variable.other.array.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E123AF</string>
+					<key>background</key>
+					<string>#E123AF15</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>variable.other.hash.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#234173</string>
+					<key>background</key>
+					<string>#23417315</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>variable.other.special</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#326496</string>
+					<key>background</key>
+					<string>#32649615</string>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>support.module.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#C84141</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>support.function.call.perl, support.method.call.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#C82341</string>
+					<key>background</key>
+					<string>#C8234115</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>storage.modifier.perl</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#007D41</string>
+				</dict>
+			</dict>
+
+
+
+
+
+			/* SQL */
+			<dict>
+				<key>scope</key>
+				<string>keyword.other.DML.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#BF4343</string>
+				</dict>
+			</dict>
+
+
+
+
+
+			/* HTML, XML */
+			<dict>
+				<key>scope</key>
+				<string>string.quoted.double.html, string.quoted.double.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#234173</string>
+					<key>background</key>
+					<string>#23417315</string>
+				</dict>
+			</dict>
+			
+
+		</array>
+	</dict>
+</plist>
