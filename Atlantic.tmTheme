@@ -45,7 +45,7 @@
 					<string>#EEEEEE</string>
 
 					<key>selection</key>
-					<string>#3366FF25</string>
+					<string>#C8C8DC40</string>
 
 					<key>gutterForeground</key>
 					<string>#A0A0A0</string>
@@ -86,9 +86,9 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#00AA00</string>
+					<string>#008800</string>
 					<key>background</key>
-					<string>#00AA0010</string>
+					<string>#00880080</string>
 					<key>fontStyle</key>
 					<string>bold</string>
 				</dict>
@@ -102,7 +102,7 @@
 					<key>foreground</key>
 					<string>#880000</string>
 					<key>background</key>
-					<string>#88000010</string>
+					<string>#88000080</string>
 					<key>fontStyle</key>
 					<string>bold</string>
 				</dict>
@@ -114,7 +114,7 @@
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#55559920</string>
+					<string>#55555510</string>
 				</dict>
 			</dict>
 
@@ -124,7 +124,7 @@
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#55559960</string>
+					<string>#55555540</string>
 				</dict>
 			</dict>
 
@@ -134,7 +134,7 @@
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#555599AA</string>
+					<string>#55555570</string>
 				</dict>
 			</dict>
 
@@ -172,7 +172,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#007D41</string>
+					<string>#007D4B</string>
 				</dict>
 			</dict>
 
@@ -232,7 +232,17 @@
 
 			<dict>
 				<key>scope</key>
-				<string>constant.character.escaped</string>
+				<string>constant.character</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>constant.language.boolean</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -275,6 +285,35 @@
 		 		<dict>
 		 			<key>foreground</key>
 		 			<string>#2963A6</string>
+		 		</dict>
+		 	</dict>
+
+
+
+
+
+		 	/* Javascript */
+		 	<dict>
+		 		<key>scope</key>
+		 		<string>entity.name.function.js</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>foreground</key>
+		 			<string>#32647D</string>
+		 			<key>background</key>
+		 			<string>#32637115</string>
+		 		</dict>
+		 	</dict>
+
+		 	<dict>
+		 		<key>scope</key>
+		 		<string>storage.type.js, storage.type.function.js, support.function.js</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>foreground</key>
+		 			<string>#32647D</string>
+		 			<key>fontStyle</key>
+		 			<string>bold</string>
 		 		</dict>
 		 	</dict>
 
@@ -339,7 +378,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#C84141</string>
+					<string>#32647D</string>
 				</dict>
 			</dict>
 
@@ -349,9 +388,9 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#C82341</string>
+					<string>#32647D</string>
 					<key>background</key>
-					<string>#C8234115</string>
+					<string>#32647D15</string>
 				</dict>
 			</dict>
 
@@ -387,7 +426,7 @@
 			/* HTML, XML */
 			<dict>
 				<key>scope</key>
-				<string>string.quoted.double.html, string.quoted.double.xml</string>
+				<string>entity.other.attribute-value.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
