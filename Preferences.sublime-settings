@@ -1,29 +1,21 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"auto_complete_selector": "source",
-	"auto_complete_triggers":
-	[
-		{
-			"characters": "<",
-			"selector": "text.html"
-		},
-		{
-			"characters": "<",
-			"selector": "text.xml"
-		}
-	],
-	"caret_style": "wide",
+	"auto_complete_selector": "source, text",
+	"caret_style": "blink",
 	"color_scheme": "Packages/User/Atlantic.tmTheme",
 	"default_line_ending": "unix",
-	"ensure_newline_at_eof_on_save": false,
+	"draw_white_space": "selection",
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"font_face": "Consolas",
 	"font_size": 8,
-	"highlight_line": false,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"ignore_inodes": true,
 	"ignored_packages":
 	[
 		"LaTeX",
+		"JSON",
 		"Java",
 		"Scala",
 		"Makefile",
@@ -31,32 +23,30 @@
 		"Textile",
 		"Lua",
 		"Matlab",
-		"ColorPicker",
 		"Erlang",
 		"Batch File",
 		"ASP",
 		"C#",
 		"AppleScript",
-		"ZenCoding",
 		"TCL",
+		"Haskell",
 		"Ruby",
 		"Groovy",
 		"D",
 		"Lisp",
 		"Objective-C",
-		"R",
+		"AAAPackageDev",
 		"Clojure",
-		"Markdown",
-		"SublimeCodeIntel",
 		"RestructuredText",
 		"OCaml",
 		"Graphviz",
 		"YAML",
-		"Haskell",
+		"R",
 		"ActionScript",
 		"Go",
 		"PHP",
-		"FileDiffs"
+		"FileDiffs",
+		"Fountain"
 	],
 	"indent_guide_options":
 	[
@@ -64,16 +54,13 @@
 		"draw_active"
 	],
 	"overlay_scroll_bars": "enabled",
-	"rulers":
-	[
-		100,
-		150
-	],
+	"scrolloff": 4,
 	"shift_tab_unindent": true,
 	"theme": "Soda Light.sublime-theme",
 	"trim_automatic_white_space": false,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_ctrl_keys": true,
 	"vintage_start_in_command_mode": true,
+	"wide_caret": true,
 	"word_wrap": true
 }
