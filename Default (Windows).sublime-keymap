@@ -14,10 +14,13 @@
 	/* Set <tab> to pass through auto-filled punctuation */
 	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true},
 		"context": [ { "key": "selection_empty", "operator": "equal", "operand": true },
-					 { "key": "preceding_text", "operator": "not_regex_match", "operand": "[[:space:]]*", "match_all": true },
-					 { "key": "following_text", "operator": "regex_contains", "operand": "^[\"'\\)\\}\\]]", "match_all": true },
+					 { "key": "preceding_text", "operator": "not_regex_match", "operand": "[[:space:]]+", "match_all": true },
+					 { "key": "following_text", "operator": "regex_contains", "operand": "^[\"'\\)\\}\\]](?!$)", "match_all": true },
 					 { "key": "auto_complete_visible", "operator": "equal", "operand": false },
 					 { "key": "has_next_field", "operator": "equal", "operand": false } ] },
+
+	/* Prettify JSON */
+	{ "keys": ["ctrl+shift+j"], "command": "prettify_json" },
 
 	/* Fix some Vintage mode quirks */
 	{ "keys": ["ctrl+]"], "command": "none" },
@@ -70,6 +73,19 @@
 		"context": [ { "key": "setting.auto_indent", "operator": "equal", "operand": true },
 					 { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
 					 { "key": "preceding_text", "operator": "regex_contains", "operand": "\\[$", "match_all": true },
-					 { "key": "following_text", "operator": "regex_contains", "operand": "^\\]", "match_all": true } ] }
+					 { "key": "following_text", "operator": "regex_contains", "operand": "^\\]", "match_all": true } ] },
 
+	/* better bindings for Origami */
+	{ "keys": ["ctrl+shift+-"], "command": "create_pane", "args": {"direction": "down"} },
+	{ "keys": ["ctrl+shift+\\"], "command": "create_pane", "args": {"direction": "right"} },
+
+	{ "keys": ["ctrl+super+k"], "command": "travel_to_pane", "args": {"direction": "up"} },
+	{ "keys": ["ctrl+super+l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+	{ "keys": ["ctrl+super+j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+	{ "keys": ["ctrl+super+h"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+	{ "keys": ["ctrl+super+shift+k"], "command": "destroy_pane", "args": {"direction": "up"} },
+	{ "keys": ["ctrl+super+shift+l"], "command": "destroy_pane", "args": {"direction": "right"} },
+	{ "keys": ["ctrl+super+shift+j"], "command": "destroy_pane", "args": {"direction": "down"} },
+	{ "keys": ["ctrl+super+shift+h"], "command": "destroy_pane", "args": {"direction": "left"} }
 ]
