@@ -1,0 +1,101 @@
+SCOPE NAME						EXAMPLE
+==========						=======
+comment
+	For comments
+
+	.line
+		.double-slash			//
+		.double-dash			--
+		.number-sign			#
+		.percentage				%
+	.block
+		.slash-star				/* ... */
+		.bracket-bang			<!-- ... -->
+		.docstring				""" ... """
+string
+	Character strings
+
+	.quoted
+		.single
+		.double
+		.triple
+		.other
+	.unquoted
+	.interpolated
+	.regexp
+	.other
+
+keyword
+	Explicitly defined syntax of the language
+
+	.control					Flow controls
+	.operator					Textual or otherwise (|| and 'or')
+	.function					Built-in functions
+	.other
+
+constant
+	Constant values
+
+	.numeric					42, 1.3f, 0xABC12
+	.character					&lt;
+	.language					true, false, null
+	.other						
+
+entity
+	A "larger part of the document"; eg a chapter, class, function, tag
+
+	.name
+		.function
+		.type
+		.tag
+		.section
+	.other
+		.inherited-class
+		.attribute-name
+		
+variable
+		Identifier
+
+		.parameter
+		.language					'this', 'super', 'self'
+		.other
+
+storage
+	Things related to modification of variables or functions
+
+	.type						'class', 'function'
+	.modifier					'static', 'final'
+
+support
+	Things included via frameworks or libraries
+
+	.function
+	.class
+	.type
+	.constant
+	.variable
+	.other
+
+invalid
+	Stuff which is invalid
+
+	.illegal
+	.deprecated
+
+markup
+	Applies to larger subsets of text
+
+	.underline
+		.link
+	.bold
+	.heading
+	.italic
+	.list
+		.ordered
+		.unordered
+	.quote
+	.raw
+	.other
+
+meta
+	Used for activation of bundle items in larger parts of the document
